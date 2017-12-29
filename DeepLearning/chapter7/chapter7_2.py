@@ -10,7 +10,6 @@ model.add(Dense(1))
 model.add(Activation(activation='sigmoid'))
 model.compile(optimizer='rmsprop', loss='binary_crossentropy', metrics=['accuracy'])
 
-
 data = np.random.random((1000, 500))
 labels = np.random.randint(2, size=(1000, 1))
 

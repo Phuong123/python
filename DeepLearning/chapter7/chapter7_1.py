@@ -13,10 +13,6 @@ data = np.random.random((1000, 500))
 labels = np.random.randint(2, size=(1000, 1))
 
 
-# Some Simple Methods Include
-# print(list(zip(X, Y)))
-# print([i for i in zip(X, Y)])
-
 score = model.evaluate(data,labels, verbose=0)
 # print ("Before Training:", zip(model.metrics_names, score))
 print ("Before Training:", list(zip(model.metrics_names, score)))
