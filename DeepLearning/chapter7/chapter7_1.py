@@ -18,9 +18,8 @@ score = model.evaluate(data,labels, verbose=0)
 print ("Before Training:", list(zip(model.metrics_names, score)))
 
 #print ([i for i in zip(model.metrics_names, score)])
-
-#model.fit(data, labels, nb_epoch=10, batch_size=32, verbose=0)
 model.fit(data, labels, epochs=10, batch_size=32, verbose=0)
+
 
 score = model.evaluate(data,labels, verbose=0)
 print ("After Training:", list(zip(model.metrics_names, score)))
