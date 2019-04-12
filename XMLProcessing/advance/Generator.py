@@ -42,8 +42,8 @@ tree.write(fileName, xml_declaration=True, encoding='utf-8', method="xml")
 from lxml import etree, objectify
 
 parser = etree.XMLParser(remove_blank_text=True)
-tree = etree.parse(fileName, parser)
-root = tree.getroot()
+tree   = etree.parse(fileName, parser)
+root   = tree.getroot()
 
 ## Process first version to the right version with namespace
 for elem in root.getiterator():
