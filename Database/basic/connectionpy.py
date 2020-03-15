@@ -1,6 +1,9 @@
+#!/usr/bin/python
+
+# https://www.postgresqltutorial.com/postgresql-python/
+
 import psycopg2
 from Database.basic.config import config
-
 
 def connect():
     """ Connect to the PostgreSQL database server """
@@ -36,4 +39,3 @@ def connect():
 
 if __name__ == '__main__':
     connect()
-
